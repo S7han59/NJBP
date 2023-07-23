@@ -158,6 +158,34 @@ proxies:
       path: /shirker
       headers:
         host: ca.ilovescp.com
+  - name: 2023年7月23日_14
+    type: vmess
+    server: hk02.vipnode.online
+    port: 80
+    cipher: auto
+    uuid: 1973a624-1bbd-4954-a6ac-e4bf0dbf85f5
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: hk02.vipnode.online
+  - name: 2023年7月23日_快
+    type: vmess
+    server: 64.110.91.92
+    port: 80
+    cipher: auto
+    uuid: 2075f10a-e78c-4873-dac3-b24886df2682
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /@hkaa0
+      headers:
+        host: sg.wyhkaa0.cf
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -179,6 +207,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -198,6 +228,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -217,6 +249,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: 📲 电报信息
     type: select
     proxies:
@@ -235,6 +269,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -253,6 +289,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -271,6 +309,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -306,6 +346,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     url: http://www.google.com/generate_204
@@ -325,6 +367,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     url: http://www.google.com/generate_204
@@ -344,6 +388,8 @@ proxy-groups:
       - 2023年7月23日_11
       - 2023年7月23日_12
       - 2023年7月23日_13
+      - 2023年7月23日_14
+      - 2023年7月23日_快
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
