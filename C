@@ -77,113 +77,28 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: 2023年9月17日_1
-    type: trojan
-    server: ap-east-hkt.lnaspiring.com
-    port: 7053
-    udp: true
-    password: 02b0a9df-2961-4a95-8136-613f1adb9135
-    sni: ap-east-cht.lnaspiring.com
+  - name: 2023年9月20日_1
+    type: vmess
+    server: 36.227.223.139
+    port: 60982
+    cipher: auto
+    uuid: 0fafb730-f3ec-3fd8-a637-eadf20c9febf
+    alterId: 0
+    tls: false
     skip-cert-verify: true
     network: tcp
-  - name: 2023年9月17日_2
-    type: vmess
-    server: cdn.narutos.top
-    port: 8880
-    cipher: auto
-    uuid: 4b5e4565-322f-4223-a891-78a84f189726
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /SMNxcwVdTTzcou9yQftDyZcCGQui9a
-      headers:
-        host: paris.yj2022.gq
-  - name: 2023年9月17日_3
-    type: vmess
-    server: cdn.narutos.top
-    port: 8880
-    cipher: auto
-    uuid: 4b5e4565-322f-4223-a891-78a84f189726
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /XQ2WCa29jfDMGBcbnQ
-      headers:
-        host: netherlands.yj2022.gq
-  - name: 2023年9月17日_4
-    type: vmess
-    server: cdn.narutos.top
-    port: 8880
-    cipher: auto
-    uuid: 4b5e4565-322f-4223-a891-78a84f189726
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /GdtYWlsLmNvbSJ9LCJjb3V
-      headers:
-        host: luxembourg.yj2022.gq
-  - name: 2023年9月17日_5
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    cipher: auto
-    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /shirker
-      headers:
-        host: buyvm5.ilovescp.com
-  - name: 2023年9月17日_6
+  - name: 2023年9月20日_2
     type: ss
-    server: 43.202.42.214
+    server: 54.255.190.166
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-  - name: 2023年9月17日_7
+  - name: 2023年9月20日_3
     type: vmess
-    server: 45.199.138.163
-    port: 48912
-    cipher: auto
-    uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
-    alterId: 64
-    tls: false
-    skip-cert-verify: true
-    network: tcp
-  - name: 2023年9月17日_8
-    type: vmess
-    server: cf-lt.sharecentre.online
+    server: fd.shabijichang.com
     port: 80
     cipher: auto
-    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /shirker
-      headers:
-        host: buyvm3.ilovescp.com
-  - name: 2023年9月17日_9
-    type: ss
-    server: zz1.sb520.xyz
-    port: 13002
-    password: e39a522b-f239-4446-9347-009aa9dcbab7
-    cipher: chacha20-ietf-poly1305
-  - name: 2023年9月17日_10
-    type: vmess
-    server: yd1.992688.xyz
-    port: 8880
-    cipher: auto
-    uuid: 67a341a7-5ae7-4d92-edad-9e8db87ce165
+    uuid: 272b3891-e103-45e0-8b09-f4d770bf5ba4
     alterId: 0
     tls: false
     skip-cert-verify: true
@@ -191,7 +106,47 @@ proxies:
     ws-opts:
       path: /
       headers:
-        host: vcus1.vpn66.eu.org
+        host: jd5.shabijichang.com
+  - name: 2023年9月20日_4
+    type: vmess
+    server: free2.6114514.xyz
+    port: 2052
+    cipher: auto
+    uuid: 8204f631-8a71-4f6a-821d-6c117edaf0fa
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: downloads1.6114514.xyz
+  - name: 2023年9月20日_5
+    type: vmess
+    server: sg2.wyhkaa0.cf
+    port: 80
+    cipher: auto
+    uuid: fc426675-5daa-46c0-d998-61f9f5323e3f
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /TG:@hkaa0
+      headers:
+        host: sg2.wyhkaa0.cf
+  - name: 2023年9月20日_6
+    type: ss
+    server: zz1.sb520.xyz
+    port: 13002
+    password: e39a522b-f239-4446-9347-009aa9dcbab7
+    cipher: chacha20-ietf-poly1305
+  - name: 2023年9月20日_7
+    type: ss
+    server: g01.tw01-ae5.entry.hsrtd.club
+    port: 20005
+    password: e25b539f-5801-3ff7-b45c-96f27b3542bb
+    cipher: aes-256-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -200,93 +155,75 @@ proxy-groups:
       - ⚖️ 负载均衡-散列
       - ♻️ 自动选择
       - DIRECT
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -309,48 +246,39 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     url: http://www.google.com/generate_204
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     url: http://www.google.com/generate_204
     interval: 300
     strategy: round-robin
     proxies:
-      - 2023年9月17日_1
-      - 2023年9月17日_2
-      - 2023年9月17日_3
-      - 2023年9月17日_4
-      - 2023年9月17日_5
-      - 2023年9月17日_6
-      - 2023年9月17日_7
-      - 2023年9月17日_8
-      - 2023年9月17日_9
-      - 2023年9月17日_10
+      - 2023年9月20日_1
+      - 2023年9月20日_2
+      - 2023年9月20日_3
+      - 2023年9月20日_4
+      - 2023年9月20日_5
+      - 2023年9月20日_6
+      - 2023年9月20日_7
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
