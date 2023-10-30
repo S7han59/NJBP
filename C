@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-10-29 20:43:32
+# 创建时间：2023-10-31 02:14:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,88 +85,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2023年10月29日_3","type":"vmess","server":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/acetaffy.top","headers":{"host":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz"}}}
-  - {"name":"2023年10月29日_4","type":"ss","server":"43.200.6.127","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"2023年10月29日_5","type":"trojan","server":"other.kunlun-ppg.com","port":10835,"udp":true,"password":"5ebd8b4a-c2a9-42fe-8724-56cbda8763ee","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"2023年10月29日_6","type":"trojan","server":"other.kunlun-ppg.com","port":10839,"udp":true,"password":"5ebd8b4a-c2a9-42fe-8724-56cbda8763ee","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"2023年10月29日_7","type":"trojan","server":"other.kunlun-ppg.com","port":10849,"udp":true,"password":"5ebd8b4a-c2a9-42fe-8724-56cbda8763ee","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"2023年10月29日_8","type":"trojan","server":"sg.kunlun-ppg.com","port":10834,"udp":true,"password":"5ebd8b4a-c2a9-42fe-8724-56cbda8763ee","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"2023年10月29日_9","type":"trojan","server":"sg.kunlun-ppg.com","port":10829,"udp":true,"password":"5ebd8b4a-c2a9-42fe-8724-56cbda8763ee","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"2023年10月31日_1","type":"vmess","server":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/acetaffy.top","headers":{"host":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz"}}}
+  - {"name":"2023年10月31日_2","type":"ss","server":"43.200.6.127","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"2023年10月31日_3","type":"ss","server":"43.201.16.153","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"2023年10月31日_4","type":"trojan","server":"16.16.181.86","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trj.rollingnext.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"2023年10月31日_5","type":"vmess","server":"gafn.online","port":443,"cipher":"auto","uuid":"2F094845-E2BD-EBF7-DEB7-995992436FAF","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.gafn.online"}}}
+  - {"name":"2023年10月31日_6","type":"vmess","server":"gafn.online","port":443,"cipher":"auto","uuid":"2F094845-E2BD-EBF7-DEB7-995992436FAF","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"LosAngeles.gafn.online"}}}
+  - {"name":"2023年10月31日_7","type":"vmess","server":"gafn.online","port":443,"cipher":"auto","uuid":"2F094845-E2BD-EBF7-DEB7-995992436FAF","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Kansas.gafn.online"}}}
+  - {"name":"2023年10月31日_8","type":"vmess","server":"mrb2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mrb2.shabijichang.com"}}}
+  - {"name":"2023年10月31日_9","type":"vmess","server":"bdd5db87-d943-450e-99cf-bc95c28f0363.asoul-diana.xyz","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/acetaffy.top","headers":{"host":"bdd5db87-d943-450e-99cf-bc95c28f0363.asoul-diana.xyz"}}}
+  - {"name":"2023年10月31日_10","type":"ss","server":"121.127.46.147","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -189,13 +210,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2023年10月29日_3
-      - 2023年10月29日_4
-      - 2023年10月29日_5
-      - 2023年10月29日_6
-      - 2023年10月29日_7
-      - 2023年10月29日_8
-      - 2023年10月29日_9
+      - 2023年10月31日_1
+      - 2023年10月31日_2
+      - 2023年10月31日_3
+      - 2023年10月31日_4
+      - 2023年10月31日_5
+      - 2023年10月31日_6
+      - 2023年10月31日_7
+      - 2023年10月31日_8
+      - 2023年10月31日_9
+      - 2023年10月31日_10
 
 rules:
 # 本地/局域网地址
