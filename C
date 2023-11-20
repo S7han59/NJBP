@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-11-20 20:24:06
+# 客户端：Clash
+# 创建时间：2023-11-20 20:26:59
 # 使用模版：ACL4SSR_BackCN.ini
-# 节点数量：92
-# 节点类型：hysteria2, vmess, ss, trojan, ssr
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：90
+# 节点类型：vmess, ss, trojan, ssr
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,8 +86,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2023年11月20日_1","type":"hysteria2","server":"ushy2.sharecentre.online","port":4433,"password":"sharecentrepro","sni":"ushy2.sharecentre.online","skip-cert-verify":true}
-  - {"name":"2023年11月20日_2","type":"hysteria2","server":"jpntt.sharecentre.online","port":4433,"password":"sharecentrepro","sni":"jpntt.sharecentre.online\r","skip-cert-verify":true}
   - {"name":"2023年11月20日_3","type":"vmess","server":"nbq11.ntbq.dynu.net","port":443,"cipher":"auto","uuid":"450cd674-1411-4ea1-979b-bf56da87b21d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/b11"}}
   - {"name":"2023年11月20日_4","type":"vmess","server":"nbq13.ntbq.dynu.net","port":443,"cipher":"auto","uuid":"450cd674-1411-4ea1-979b-bf56da87b21d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/b13"}}
   - {"name":"2023年11月20日_5","type":"vmess","server":"b21.ntbq.dynu.net","port":443,"cipher":"auto","uuid":"450cd674-1411-4ea1-979b-bf56da87b21d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/b21"}}
@@ -184,8 +181,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 2023年11月20日_1
-      - 2023年11月20日_2
       - 2023年11月20日_3
       - 2023年11月20日_4
       - 2023年11月20日_5
@@ -296,8 +291,6 @@ proxy-groups:
     proxies:
       - 🚀 中国代理
       - 🎯 全球直连
-      - 2023年11月20日_1
-      - 2023年11月20日_2
       - 2023年11月20日_3
       - 2023年11月20日_4
       - 2023年11月20日_5
