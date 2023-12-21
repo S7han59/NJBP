@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-19 00:04:55
+# 创建时间：2023-12-21 22:41:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：5
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,81 +85,74 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2023年12月19日_1","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"dc.yydsb.link"}}}
-  - {"name":"2023年12月19日_2","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ws.yydsb.link"}}}
-  - {"name":"2023年12月19日_3","type":"vmess","server":"61.240.29.214","port":12127,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ae.yydsb.link"}}}
-  - {"name":"2023年12月19日_4","type":"vmess","server":"183.56.205.246","port":20288,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"sg8.ip8.shop"}}}
-  - {"name":"2023年12月19日_5","type":"vmess","server":"61.240.29.214","port":18080,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"in.grpc.gay"}}}
-  - {"name":"2023年12月19日_6","type":"ss","server":"14.18.118.223","port":38083,"password":"41631bd2-4463-48a0-ab4c-15dcba237a90","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇪~WS~AEX0.01","type":"vmess","server":"61.240.29.214","port":12127,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ae.yydsb.link"}}}
+  - {"name":"🇸🇬~SF~SGX0.01","type":"vmess","server":"183.56.205.246","port":20288,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"sg8.ip8.shop"}}}
+  - {"name":"🇩🇪~WS~DEX0.01","type":"vmess","server":"61.240.29.214","port":18080,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"in.grpc.gay"}}}
+  - {"name":"🇭🇰~ZF~HKX0.1\r","type":"ss","server":"14.18.118.223","port":38083,"password":"41631bd2-4463-48a0-ab4c-15dcba237a90","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳_CN_中国->🇮🇳_IN_印度","type":"vmess","server":"yes.cnmjcn.net","port":16626,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,12 +175,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2023年12月19日_1
-      - 2023年12月19日_2
-      - 2023年12月19日_3
-      - 2023年12月19日_4
-      - 2023年12月19日_5
-      - 2023年12月19日_6
+      - 🇦🇪~WS~AEX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇩🇪~WS~DEX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
 
 rules:
 # 本地/局域网地址
