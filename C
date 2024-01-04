@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-26 22:28:09
+# 创建时间：2024-01-05 01:01:08
 # 使用模版：ACL4SSR_WithChinaIp_WithGFW.ini
-# 节点数量：8
-# 节点类型：ss, vmess
+# 节点数量：10
+# 节点类型：vmess, ss
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,95 +86,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2023年12月26日_1","type":"ss","server":"36.137.68.141","port":50001,"password":"0ef148e1-80e1-4e86-90b5-74fe3e831df7","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"2023年12月26日_2","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ws.yydsb.link"}}}
-  - {"name":"2023年12月26日_3","type":"vmess","server":"61.240.29.214","port":12127,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ae.yydsb.link"}}}
-  - {"name":"2023年12月26日_4","type":"vmess","server":"183.56.205.246","port":20288,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"sg8.ip8.shop"}}}
-  - {"name":"2023年12月26日_5","type":"vmess","server":"yes.cnmjcn.net","port":16626,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
-  - {"name":"2023年12月26日_6","type":"vmess","server":"t.cnmjcn.cyou","port":16648,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
-  - {"name":"2023年12月26日_7","type":"vmess","server":"m.cnmjcn.com","port":16648,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
-  - {"name":"2023年12月26日_8","type":"vmess","server":"142.171.202.130","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702650992491","headers":{"host":"www.87981532.xyz"}}}
+  - {"name":"2024年1月5日_1","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ws.yydsb.link"}}}
+  - {"name":"2024年1月5日_2","type":"vmess","server":"61.240.29.214","port":12127,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ae.yydsb.link"}}}
+  - {"name":"2024年1月5日_3","type":"ss","server":"14.18.105.181","port":38383,"password":"41631bd2-4463-48a0-ab4c-15dcba237a90","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"2024年1月5日_4","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"dc.yydsb.link"}}}
+  - {"name":"2024年1月5日_5","type":"vmess","server":"14.18.116.22","port":20288,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"sg8.ip8.shop"}}}
+  - {"name":"2024年1月5日_6","type":"vmess","server":"61.240.29.214","port":18080,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"in.grpc.gay"}}}
+  - {"name":"2024年1月5日_7","type":"vmess","server":"0101.ymy.gay","port":80,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"ni.grpc.gay"}}}
+  - {"name":"2024年1月5日_8","type":"vmess","server":"101.91.184.121","port":33220,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"jp.grpc.gay"}}}
+  - {"name":"2024年1月5日_9","type":"vmess","server":"achk.cloudflarest.link","port":80,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"fr.grpc.gay"}}}
+  - {"name":"2024年1月5日_10","type":"vmess","server":"sg1.ip8.shop","port":23636,"cipher":"auto","uuid":"41631bd2-4463-48a0-ab4c-15dcba237a90","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"sg1.ip8.shop"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -197,14 +211,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2023年12月26日_1
-      - 2023年12月26日_2
-      - 2023年12月26日_3
-      - 2023年12月26日_4
-      - 2023年12月26日_5
-      - 2023年12月26日_6
-      - 2023年12月26日_7
-      - 2023年12月26日_8
+      - 2024年1月5日_1
+      - 2024年1月5日_2
+      - 2024年1月5日_3
+      - 2024年1月5日_4
+      - 2024年1月5日_5
+      - 2024年1月5日_6
+      - 2024年1月5日_7
+      - 2024年1月5日_8
+      - 2024年1月5日_9
+      - 2024年1月5日_10
 
 rules:
 # 本地/局域网地址
