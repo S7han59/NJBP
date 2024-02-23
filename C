@@ -1,11 +1,3 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-02-23 12:43:34
-# 使用模版：ACL4SSR_WithChinaIp_WithGFW.ini
-# 节点数量：38
-# 节点类型：vmess, ss
-####################################
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -20,13 +12,13 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
+    - "*.lan"
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
     - swscan.apple.com
     - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
     - time.*.com
     - time.*.gov
     - time.*.edu.cn
@@ -47,17 +39,17 @@ dns:
     - ntp5.*.com
     - ntp6.*.com
     - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
     - +.pool.ntp.org
     - time1.cloud.tencent.com
     - +.music.163.com
-    - '*.126.net'
+    - "*.126.net"
     - musicapi.taihe.com
     - music.taihe.com
     - songsearch.kugou.com
     - trackercdn.kugou.com
-    - '*.kuwo.cn'
+    - "*.kuwo.cn"
     - api-jooxtt.sanook.com
     - api.joox.com
     - joox.com
@@ -65,7 +57,7 @@ dns:
     - +.music.tc.qq.com
     - aqqmusic.tc.qq.com
     - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
+    - "*.xiami.com"
     - +.music.migu.cn
     - +.srv.nintendo.net
     - +.stun.playstation.net
@@ -75,7 +67,7 @@ dns:
     - proxy.golang.org
     - stun.*.*
     - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - "*.mcdn.bilivideo.cn"
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
@@ -84,307 +76,2039 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
-
 proxies:
-  - {"name":"2024年2月23日_1","type":"vmess","server":"47.245.1.55","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"42668714005122.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_2","type":"vmess","server":"47.245.1.55","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"38105579905530.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_3","type":"vmess","server":"ls.wvw.mom","port":34237,"cipher":"auto","uuid":"f1b91a7d-a5e2-4684-a183-d2d656400ca1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"/","grpc-mode":"gun"}}
-  - {"name":"2024年2月23日_4","type":"vmess","server":"172.64.229.194","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"64802499642610.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_5","type":"vmess","server":"pl-a.yuji2022.eu.org","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL","headers":{"host":"pl-a.yuji2022.eu.org"}}}
-  - {"name":"2024年2月23日_6","type":"vmess","server":"8.212.41.98","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"72309931296166.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_7","type":"vmess","server":"47.245.40.161","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"73823694840699.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_8","type":"vmess","server":"172.64.229.34","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"30442937604060.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_9","type":"vmess","server":"138.2.18.184","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"58651051896856.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_10","type":"vmess","server":"172.64.229.220","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"1491835382269.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_11","type":"vmess","server":"172.64.229.189","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"24858974151157.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_12","type":"vmess","server":"172.64.229.172","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"62614288611858.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_13","type":"vmess","server":"158.101.89.33","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"12161822840809.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_14","type":"vmess","server":"172.64.229.235","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"15588702348959.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_15","type":"vmess","server":"131.186.61.45","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"267950397647.hk.chisi.link"}}}
-  - {"name":"2024年2月23日_16","type":"vmess","server":"8.212.41.98","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"4969953296483.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_17","type":"vmess","server":"47.245.40.161","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"81875188473697.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_18","type":"vmess","server":"172.64.229.34","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"53010395066886.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_19","type":"vmess","server":"138.2.18.184","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"86633102226504.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_20","type":"vmess","server":"172.64.229.220","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"77565041776128.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_21","type":"vmess","server":"172.64.229.189","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"45822947192497.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_22","type":"vmess","server":"172.64.229.172","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"83996138728823.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_23","type":"vmess","server":"158.101.89.33","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"44722172173682.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_24","type":"vmess","server":"172.64.229.235","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"97201823251037.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_25","type":"vmess","server":"131.186.61.45","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"98744676922173.yg.chisi.link"}}}
-  - {"name":"2024年2月23日_26","type":"vmess","server":"8.212.41.98","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"58010087758060.tw.chisi.link"}}}
-  - {"name":"2024年2月23日_27","type":"vmess","server":"47.245.1.55","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"15007931697566.tw.chisi.link"}}}
-  - {"name":"2024年2月23日_28","type":"vmess","server":"172.64.229.34","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"18902027939635.tw.chisi.link"}}}
-  - {"name":"2024年2月23日_29","type":"vmess","server":"138.2.18.184","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"4574325537329.tw.chisi.link"}}}
-  - {"name":"2024年2月23日_30","type":"vmess","server":"8.212.41.98","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"5758273738667.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_31","type":"vmess","server":"47.245.40.161","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"72002545297811.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_32","type":"vmess","server":"172.64.229.34","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"52352547345792.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_33","type":"vmess","server":"138.2.18.184","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"37499152720201.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_34","type":"vmess","server":"172.64.229.220","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"90015571304603.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_35","type":"vmess","server":"172.64.229.189","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"6024955541365.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_36","type":"vmess","server":"172.64.229.172","port":80,"cipher":"auto","uuid":"f898582b-33de-4bea-aee1-d83e9a369c7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html?ed=2048","headers":{"host":"94676655950953.mg.chisi.link"}}}
-  - {"name":"2024年2月23日_37","type":"ss","server":"112.29.215.32","port":27564,"password":"q5m0lZUBjc","cipher":"aes-256-gcm"}
-  - {"name":"2024年2月23日_38","type":"vmess","server":"154.21.89.12","port":12446,"cipher":"auto","uuid":"f08d9ca2-1504-4c87-e295-3e9a62009e44","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/f08d9ca2","headers":{"host":"layuepao.5201314.cfd"}}}
+  - name: 🇵🇱 Naruto の 波兰 Node
+    type: vmess
+    server: pl-a.yuji2022.eu.org
+    port: 8880
+    cipher: auto
+    uuid: 4b5e4565-322f-4223-a891-78a84f189726
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
+      headers:
+        host: pl-a.yuji2022.eu.org
+  - name: CDN中转1-香港3-1倍率-M
+    type: vmess
+    server: 8.212.41.98
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 72309931296166.hk.chisi.link
+  - name: CDN中转2-香港3-1倍率-M
+    type: vmess
+    server: 47.245.40.161
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 73823694840699.hk.chisi.link
+  - name: CDN中转3-香港3-1倍率-M
+    type: vmess
+    server: 172.64.229.34
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 30442937604060.hk.chisi.link
+  - name: CDN中转4-香港3-1倍率-M
+    type: vmess
+    server: 138.2.18.184
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 58651051896856.hk.chisi.link
+  - name: CDN中转5-香港3-1倍率-M
+    type: vmess
+    server: 172.64.229.220
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 1491835382269.hk.chisi.link
+  - name: CDN中转6-香港3-1倍率-M
+    type: vmess
+    server: 172.64.229.189
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 24858974151157.hk.chisi.link
+  - name: CDN中转7-香港3-1倍率-M
+    type: vmess
+    server: 172.64.229.172
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 62614288611858.hk.chisi.link
+  - name: CDN中转8-香港3-1倍率-M
+    type: vmess
+    server: 158.101.89.33
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 12161822840809.hk.chisi.link
+  - name: CDN中转9-香港3-1倍率-M
+    type: vmess
+    server: 172.64.229.235
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 15588702348959.hk.chisi.link
+  - name: CDN中转10-香港3-1倍率-M
+    type: vmess
+    server: 131.186.61.45
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 267950397647.hk.chisi.link
+  - name: CDN中转1-英国-1倍率-A_1
+    type: vmess
+    server: 8.212.41.98
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 4969953296483.yg.chisi.link
+  - name: CDN中转2-英国-1倍率-A
+    type: vmess
+    server: 47.245.40.161
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 81875188473697.yg.chisi.link
+  - name: CDN中转3-英国-1倍率-A
+    type: vmess
+    server: 172.64.229.34
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 53010395066886.yg.chisi.link
+  - name: CDN中转4-英国-1倍率-A
+    type: vmess
+    server: 138.2.18.184
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 86633102226504.yg.chisi.link
+  - name: CDN中转5-英国-1倍率-A
+    type: vmess
+    server: 172.64.229.220
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 77565041776128.yg.chisi.link
+  - name: CDN中转6-英国-1倍率-A
+    type: vmess
+    server: 172.64.229.189
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 45822947192497.yg.chisi.link
+  - name: CDN中转7-英国-1倍率-A
+    type: vmess
+    server: 172.64.229.172
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 83996138728823.yg.chisi.link
+  - name: CDN中转8-英国-1倍率-A
+    type: vmess
+    server: 158.101.89.33
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 44722172173682.yg.chisi.link
+  - name: CDN中转9-英国-1倍率-A
+    type: vmess
+    server: 172.64.229.235
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 97201823251037.yg.chisi.link
+  - name: CDN中转10-英国-1倍率-A_1
+    type: vmess
+    server: 131.186.61.45
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 98744676922173.yg.chisi.link
+  - name: CDN中转1-英国2-1倍率-M
+    type: vmess
+    server: 8.212.41.98
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 58010087758060.tw.chisi.link
+  - name: CDN中转2-英国2-1倍率-M
+    type: vmess
+    server: 47.245.1.55
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 15007931697566.tw.chisi.link
+  - name: CDN中转3-英国2-1倍率-M
+    type: vmess
+    server: 172.64.229.34
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 18902027939635.tw.chisi.link
+  - name: CDN中转4-英国2-1倍率-M
+    type: vmess
+    server: 138.2.18.184
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 4574325537329.tw.chisi.link
+  - name: CDN中转1-美国2-1倍率-M_1
+    type: vmess
+    server: 8.212.41.98
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 5758273738667.mg.chisi.link
+  - name: CDN中转2-美国2-1倍率-M
+    type: vmess
+    server: 47.245.40.161
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 72002545297811.mg.chisi.link
+  - name: CDN中转3-美国2-1倍率-M
+    type: vmess
+    server: 172.64.229.34
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 52352547345792.mg.chisi.link
+  - name: CDN中转4-美国2-1倍率-M
+    type: vmess
+    server: 138.2.18.184
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 37499152720201.mg.chisi.link
+  - name: CDN中转5-美国2-1倍率-M
+    type: vmess
+    server: 172.64.229.220
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 90015571304603.mg.chisi.link
+  - name: CDN中转6-美国2-1倍率-M
+    type: vmess
+    server: 172.64.229.189
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 6024955541365.mg.chisi.link
+  - name: CDN中转7-美国2-1倍率-M
+    type: vmess
+    server: 172.64.229.172
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 94676655950953.mg.chisi.link
+  - name: "🇺🇸美国专线01\r"
+    type: ss
+    server: 112.29.215.32
+    port: 27564
+    password: q5m0lZUBjc
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国 01
+    type: vmess
+    server: 154.21.89.12
+    port: 12446
+    cipher: auto
+    uuid: f08d9ca2-1504-4c87-e295-3e9a62009e44
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /f08d9ca2
+      headers:
+        host: layuepao.5201314.cfd
+  - name: CDN中转1-英国-1倍率-A_2
+    type: vmess
+    server: 47.245.1.55
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 42668714005122.yg.chisi.link
+  - name: CDN中转1-美国2-1倍率-M_2
+    type: vmess
+    server: 47.245.1.55
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 38105579905530.mg.chisi.link
+  - name: 🇬🇧~WF~UKˣ⁰
+    type: vmess
+    server: ls.wvw.mom
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: CDN中转10-英国-1倍率-A_2
+    type: vmess
+    server: 172.64.229.194
+    port: 80
+    cipher: auto
+    uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /mls.html?ed=2048
+      headers:
+        host: 64802499642610.yg.chisi.link
+  - name: 🇭🇰~FS~HKX0.01
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: "🇭🇰~ZF~HKX0.1\r"
+    type: ss
+    server: 183.56.240.135
+    port: 38383
+    password: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    cipher: chacha20-ietf-poly1305
+  - name: 🇨🇳~DC~CNX0.01
+    type: vmess
+    server: 101.89.210.192
+    port: 33220
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: dc.yydsb.link
+  - name: 🇨🇦~WS~CAX0.01
+    type: vmess
+    server: bestcf.ymy.gay
+    port: 80
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ca.ccddos.link
+  - name: 🇺🇸~CF~USX0.01
+    type: vmess
+    server: 42.203.52.105
+    port: 50038
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇺🇸~NF~USX0.01
+    type: vmess
+    server: 61.240.29.214
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: de.k8s.now.cc
+  - name: 🇧🇷~WS~BRX0.01
+    type: vmess
+    server: speedcl.5489265.xyz
+    port: 80
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ws.grpc.gay
+  - name: 🇯🇵~CF~JPX0.01
+    type: vmess
+    server: 20.222.225.78
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇸🇬~NF~SGX0.01
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇭🇰~NF~HKX0.01
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇷~NF~TRX0.01
+    type: vmess
+    server: 183.240.196.236
+    port: 9999
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇼~CF~TWX0.01
+    type: vmess
+    server: 211.75.74.232
+    port: 4443
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇭🇰~CF~HKX0.01
+    type: vmess
+    server: 202.86.138.58
+    port: 50000
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇸🇬~SF~SGX0.01
+    type: vmess
+    server: 183.56.232.244
+    port: 20288
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg8.ip8.shop
+  - name: 🇨🇦~CF~CAX0.01
+    type: vmess
+    server: 202.81.231.30
+    port: 52000
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇯🇵~DF~JPX0.01
+    type: vmess
+    server: 4.216.92.192
+    port: 9080
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇮🇹~CF~ITX0.01
+    type: vmess
+    server: ls.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇼~NF~TWX0.01
+    type: vmess
+    server: 118.163.101.44
+    port: 44332
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇳🇱~CF~NLX0.01
+    type: vmess
+    server: ls.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇰🇷~CF~KRX0.01
+    type: vmess
+    server: kr.yydsb.link
+    port: 30002
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇯🇵~NF~JPX0.01
+    type: vmess
+    server: 101.89.210.192
+    port: 33220
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ws.yydsb.link
+  - name: 🇦🇪~WS~AEX0.01
+    type: vmess
+    server: 61.240.29.134
+    port: 12127
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ae.yydsb.link
+  - name: 🇩🇪~WS~DEX0.01
+    type: vmess
+    server: 61.240.29.134
+    port: 18080
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: de.grpc.gay
+  - name: 🇬🇧~WS~UKX0.01
+    type: vmess
+    server: 101.89.210.192
+    port: 33219
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ir.cf.now.cc
+  - name: 🇦🇺~WS~AUX0.01
+    type: vmess
+    server: clun.top
+    port: 80
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: au.grpc.gay
+  - name: 🇮🇳~WS~INX0.01
+    type: vmess
+    server: bestproxy.ymy.gay
+    port: 80
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ni.grpc.gay
+  - name: 🇸🇬~WS~SGX0.01
+    type: vmess
+    server: 124.225.206.214
+    port: 32736
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg.grpc.gay
+  - name: 🇯🇵~WS~JPX0.01
+    type: vmess
+    server: 101.89.210.192
+    port: 33219
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: jp.grpc.gay
+  - name: 🇫🇷~WS~FRX0
+    type: vmess
+    server: achk.cloudflarest.link
+    port: 80
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: fr.grpc.gay
+  - name: 🇸🇬~WS~SGX0
+    type: vmess
+    server: sg-singapore-oracle-e95395.ip1.shop
+    port: 23636
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg-singapore-oracle-e95395.ip1.shop
+  - name: 🇰🇷~WS~KRX0
+    type: vmess
+    server: kr-seoul-oracle-4fccf5.ip1.shop
+    port: 49898
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: kr-seoul-oracle-4fccf5.ip1.shop
+  - name: 🇯🇵~WS~JPX0
+    type: vmess
+    server: jp-tokyo-oracle-03b285.ip1.shop
+    port: 21988
+    cipher: auto
+    uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: jp-tokyo-oracle-03b285.ip1.shop
+  - name: "中转节点-3.43MB/s\r"
+    type: trojan
+    server: xibaozi.19890604.day
+    port: 10847
+    udp: true
+    password: 04ae9c33-eeeb-479a-9c97-c40d3ca9ff71
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    network: tcp
+  - name: "中转节点-2.86MB/s\r"
+    type: trojan
+    server: xibaozi.19890604.day
+    port: 10837
+    udp: true
+    password: 04ae9c33-eeeb-479a-9c97-c40d3ca9ff71
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇭🇰~ZF~HKˣ⁰˙¹\r"
+    type: ss
+    server: 183.56.236.169
+    port: 38183
+    password: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    cipher: chacha20-ietf-poly1305
+  - name: 🇨🇳~DC~CNˣ⁰˙⁰¹
+    type: vmess
+    server: 101.89.210.192
+    port: 33220
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: dc.yydsb.link
+  - name: 🇨🇦~WS~CAˣ⁰˙⁰¹
+    type: vmess
+    server: cf.wvw.mom
+    port: 80
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ca.ccddos.link
+  - name: 🇺🇸~CF~USˣ⁰˙⁰¹
+    type: vmess
+    server: 42.203.52.105
+    port: 50038
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇺🇸~NF~USˣ⁰˙⁰¹
+    type: vmess
+    server: 61.240.29.134
+    port: 55555
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: de.k8s.now.cc
+  - name: 🇧🇷~WS~BRˣ⁰˙⁰¹
+    type: vmess
+    server: speedcl.5489265.xyz
+    port: 80
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ws.grpc.gay
+  - name: 🇯🇵~DF~JPˣ⁰˙⁰¹
+    type: vmess
+    server: 4.215.192.103
+    port: 41553
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇸🇬~NF~SGˣ⁰˙⁰¹
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇭🇰~NF~HKˣ⁰˙⁰¹
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇷~NF~TRˣ⁰˙⁰¹
+    type: vmess
+    server: 103.56.60.156
+    port: 6070
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇼~CF~TWˣ⁰˙⁰¹
+    type: vmess
+    server: 211.75.74.232
+    port: 4443
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇭🇰~CF~HKˣ⁰˙⁰¹
+    type: vmess
+    server: ls.wvw.mom
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇸🇬~SF~SGˣ⁰˙⁰¹
+    type: vmess
+    server: 14.116.192.98
+    port: 38564
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg8.ip8.shop
+  - name: 🇨🇦~CF~CAˣ⁰˙⁰¹
+    type: vmess
+    server: 114.34.126.218
+    port: 3443
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇸🇬~DF~SGˣ⁰˙⁰¹
+    type: vmess
+    server: 4.193.57.231
+    port: 500
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇮🇹~CF~ITˣ⁰˙⁰¹
+    type: vmess
+    server: ls.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇹🇼~NF~TWˣ⁰˙⁰¹
+    type: vmess
+    server: 118.163.101.44
+    port: 44332
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇳🇱~CF~NLˣ⁰˙⁰¹
+    type: vmess
+    server: ls.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇰🇷~CF~KRˣ⁰˙⁰¹
+    type: vmess
+    server: kr.yydsb.link
+    port: 30002
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇭🇰~FS~HKˣ⁰˙⁰¹
+    type: vmess
+    server: hk.yydsb.link
+    port: 34237
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+      grpc-mode: gun
+  - name: 🇯🇵~CF~JPˣ⁰˙⁰¹
+    type: vmess
+    server: 101.89.210.192
+    port: 33220
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ws.yydsb.link
+  - name: 🇦🇪~WS~AEˣ⁰˙⁰¹
+    type: vmess
+    server: 61.240.29.134
+    port: 12127
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ae.yydsb.link
+  - name: 🇩🇪~WS~DEˣ⁰˙⁰¹
+    type: vmess
+    server: 61.240.29.134
+    port: 18080
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: de.grpc.gay
+  - name: 🇬🇧~WS~UKˣ⁰˙⁰¹
+    type: vmess
+    server: 101.89.210.192
+    port: 33219
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: ir.cf.now.cc
+  - name: 🇦🇺~WS~AUˣ⁰˙⁰¹
+    type: vmess
+    server: clun.top
+    port: 80
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: au.grpc.gay
+  - name: 🇸🇬~WS~SGˣ⁰˙⁰¹
+    type: vmess
+    server: 124.225.206.214
+    port: 32736
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg.grpc.gay
+  - name: 🇯🇵~WS~JPˣ⁰˙⁰¹
+    type: vmess
+    server: 101.89.210.192
+    port: 33219
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: jp.grpc.gay
+  - name: 🇫🇷~WS~FRˣ⁰
+    type: vmess
+    server: achk.cloudflarest.link
+    port: 80
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: fr.grpc.gay
+  - name: 🇸🇬~WS~SGˣ⁰
+    type: vmess
+    server: sg-singapore-oracle-4f34e8.ip1.shop
+    port: 21313
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: sg-singapore-oracle-4f34e8.ip1.shop
+  - name: 🇰🇷~WS~KRˣ⁰
+    type: vmess
+    server: kr-seoul-oracle-64dc93.ip1.shop
+    port: 22020
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: kr-seoul-oracle-64dc93.ip1.shop
+  - name: 🇯🇵~WS~JPˣ⁰
+    type: vmess
+    server: jp-tokyo-oracle-5a26da.ip1.shop
+    port: 57557
+    cipher: auto
+    uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: jp-tokyo-oracle-5a26da.ip1.shop
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - ⚖️ 负载均衡-轮询
+      - ⚖️ 负载均衡-散列
       - ♻️ 自动选择
       - DIRECT
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -407,51 +2131,328 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2024年2月23日_1
-      - 2024年2月23日_2
-      - 2024年2月23日_3
-      - 2024年2月23日_4
-      - 2024年2月23日_5
-      - 2024年2月23日_6
-      - 2024年2月23日_7
-      - 2024年2月23日_8
-      - 2024年2月23日_9
-      - 2024年2月23日_10
-      - 2024年2月23日_11
-      - 2024年2月23日_12
-      - 2024年2月23日_13
-      - 2024年2月23日_14
-      - 2024年2月23日_15
-      - 2024年2月23日_16
-      - 2024年2月23日_17
-      - 2024年2月23日_18
-      - 2024年2月23日_19
-      - 2024年2月23日_20
-      - 2024年2月23日_21
-      - 2024年2月23日_22
-      - 2024年2月23日_23
-      - 2024年2月23日_24
-      - 2024年2月23日_25
-      - 2024年2月23日_26
-      - 2024年2月23日_27
-      - 2024年2月23日_28
-      - 2024年2月23日_29
-      - 2024年2月23日_30
-      - 2024年2月23日_31
-      - 2024年2月23日_32
-      - 2024年2月23日_33
-      - 2024年2月23日_34
-      - 2024年2月23日_35
-      - 2024年2月23日_36
-      - 2024年2月23日_37
-      - 2024年2月23日_38
-
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
+  - name: ⚖️ 负载均衡-散列
+    type: load-balance
+    url: http://www.google.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
+  - name: ⚖️ 负载均衡-轮询
+    type: load-balance
+    url: http://www.google.com/generate_204
+    interval: 300
+    strategy: round-robin
+    proxies:
+      - 🇵🇱 Naruto の 波兰 Node
+      - CDN中转1-香港3-1倍率-M
+      - CDN中转2-香港3-1倍率-M
+      - CDN中转3-香港3-1倍率-M
+      - CDN中转4-香港3-1倍率-M
+      - CDN中转5-香港3-1倍率-M
+      - CDN中转6-香港3-1倍率-M
+      - CDN中转7-香港3-1倍率-M
+      - CDN中转8-香港3-1倍率-M
+      - CDN中转9-香港3-1倍率-M
+      - CDN中转10-香港3-1倍率-M
+      - CDN中转1-英国-1倍率-A_1
+      - CDN中转2-英国-1倍率-A
+      - CDN中转3-英国-1倍率-A
+      - CDN中转4-英国-1倍率-A
+      - CDN中转5-英国-1倍率-A
+      - CDN中转6-英国-1倍率-A
+      - CDN中转7-英国-1倍率-A
+      - CDN中转8-英国-1倍率-A
+      - CDN中转9-英国-1倍率-A
+      - CDN中转10-英国-1倍率-A_1
+      - CDN中转1-英国2-1倍率-M
+      - CDN中转2-英国2-1倍率-M
+      - CDN中转3-英国2-1倍率-M
+      - CDN中转4-英国2-1倍率-M
+      - CDN中转1-美国2-1倍率-M_1
+      - CDN中转2-美国2-1倍率-M
+      - CDN中转3-美国2-1倍率-M
+      - CDN中转4-美国2-1倍率-M
+      - CDN中转5-美国2-1倍率-M
+      - CDN中转6-美国2-1倍率-M
+      - CDN中转7-美国2-1倍率-M
+      - "🇺🇸美国专线01\r"
+      - 🇺🇸美国 01
+      - CDN中转1-英国-1倍率-A_2
+      - CDN中转1-美国2-1倍率-M_2
+      - 🇬🇧~WF~UKˣ⁰
+      - CDN中转10-英国-1倍率-A_2
+      - 🇭🇰~FS~HKX0.01
+      - "🇭🇰~ZF~HKX0.1\r"
+      - 🇨🇳~DC~CNX0.01
+      - 🇨🇦~WS~CAX0.01
+      - 🇺🇸~CF~USX0.01
+      - 🇺🇸~NF~USX0.01
+      - 🇧🇷~WS~BRX0.01
+      - 🇯🇵~CF~JPX0.01
+      - 🇸🇬~NF~SGX0.01
+      - 🇭🇰~NF~HKX0.01
+      - 🇹🇷~NF~TRX0.01
+      - 🇹🇼~CF~TWX0.01
+      - 🇭🇰~CF~HKX0.01
+      - 🇸🇬~SF~SGX0.01
+      - 🇨🇦~CF~CAX0.01
+      - 🇯🇵~DF~JPX0.01
+      - 🇮🇹~CF~ITX0.01
+      - 🇹🇼~NF~TWX0.01
+      - 🇳🇱~CF~NLX0.01
+      - 🇰🇷~CF~KRX0.01
+      - 🇯🇵~NF~JPX0.01
+      - 🇦🇪~WS~AEX0.01
+      - 🇩🇪~WS~DEX0.01
+      - 🇬🇧~WS~UKX0.01
+      - 🇦🇺~WS~AUX0.01
+      - 🇮🇳~WS~INX0.01
+      - 🇸🇬~WS~SGX0.01
+      - 🇯🇵~WS~JPX0.01
+      - 🇫🇷~WS~FRX0
+      - 🇸🇬~WS~SGX0
+      - 🇰🇷~WS~KRX0
+      - 🇯🇵~WS~JPX0
+      - "中转节点-3.43MB/s\r"
+      - "中转节点-2.86MB/s\r"
+      - "🇭🇰~ZF~HKˣ⁰˙¹\r"
+      - 🇨🇳~DC~CNˣ⁰˙⁰¹
+      - 🇨🇦~WS~CAˣ⁰˙⁰¹
+      - 🇺🇸~CF~USˣ⁰˙⁰¹
+      - 🇺🇸~NF~USˣ⁰˙⁰¹
+      - 🇧🇷~WS~BRˣ⁰˙⁰¹
+      - 🇯🇵~DF~JPˣ⁰˙⁰¹
+      - 🇸🇬~NF~SGˣ⁰˙⁰¹
+      - 🇭🇰~NF~HKˣ⁰˙⁰¹
+      - 🇹🇷~NF~TRˣ⁰˙⁰¹
+      - 🇹🇼~CF~TWˣ⁰˙⁰¹
+      - 🇭🇰~CF~HKˣ⁰˙⁰¹
+      - 🇸🇬~SF~SGˣ⁰˙⁰¹
+      - 🇨🇦~CF~CAˣ⁰˙⁰¹
+      - 🇸🇬~DF~SGˣ⁰˙⁰¹
+      - 🇮🇹~CF~ITˣ⁰˙⁰¹
+      - 🇹🇼~NF~TWˣ⁰˙⁰¹
+      - 🇳🇱~CF~NLˣ⁰˙⁰¹
+      - 🇰🇷~CF~KRˣ⁰˙⁰¹
+      - 🇭🇰~FS~HKˣ⁰˙⁰¹
+      - 🇯🇵~CF~JPˣ⁰˙⁰¹
+      - 🇦🇪~WS~AEˣ⁰˙⁰¹
+      - 🇩🇪~WS~DEˣ⁰˙⁰¹
+      - 🇬🇧~WS~UKˣ⁰˙⁰¹
+      - 🇦🇺~WS~AUˣ⁰˙⁰¹
+      - 🇸🇬~WS~SGˣ⁰˙⁰¹
+      - 🇯🇵~WS~JPˣ⁰˙⁰¹
+      - 🇫🇷~WS~FRˣ⁰
+      - 🇸🇬~WS~SGˣ⁰
+      - 🇰🇷~WS~KRˣ⁰
+      - 🇯🇵~WS~JPˣ⁰
 rules:
-# 本地/局域网地址
-# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-# 本地/局域网地址
-# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -487,12 +2488,6 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
-# 广告关键词
-# 广告联盟-国内****************
-# 广告联盟-国外****************
-# 垃圾站点****************
-# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1085,66 +3080,6 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
-# 包含常用应用的各种去广告规则。
-# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
-# 163
-# 17173
-# 178
-# 2345
-# 360
-# 58
-# Alibaba
-# Adobe
-# Apple
-# AutoHome
-# Baidu
-# Book-app 起点 掌阅 书旗 宜搜
-# ByteDance 头条抖音
-# Dangdang
-# Duomi
-# Facebook
-# Fang
-# Google
-# JD
-# Kugou
-# Kuwo
-# Meizu flyme 魅族
-# Meitu
-# Miui 小米
-# Moji
-# Qingting.fm
-# QQ
-# RenRen
-# Sina
-# Sougou
-# Teleplus
-# Twitter
-# UC ali
-# Weifeng
-# WPS Office
-# Wi-Fi key
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷app&看看
-# Yahoo
-# Zhihu
-# Ads in Video apps 下面都是 ********************
-# 6间房
-# Baofeng 暴风影音
-# Douyu
-# Fenghuang 凤凰TV
-# Funshion 风行
-# iqiyi PPS 爱奇艺
-# Ku6 酷6
-# LeTV 乐视
-# MGTV 芒果TV
-# Sohu 搜狐
-# PPTV、PPLive
-# QQ Live
-# Youku & Tudou
-# Youtube
-# Others ads in Video apps
-# Ads in Video apps end 上面都是 ********************
-# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -2168,7 +4103,6 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
-# Google China
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2198,8 +4132,6 @@ rules:
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-# 内容：SteamCN
-# 数量：16条
   - DOMAIN,csgo.wmsj.cn,🎯 全球直连
   - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
   - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
@@ -2216,9 +4148,6 @@ rules:
   - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-# Microsoft Services
-# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
-# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -2298,8 +4227,6 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
-# Apple
-# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
@@ -2329,9 +4256,6 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-# Telegram
-#PROCESS-NAME,Telegram.exe
-#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -2344,58 +4268,8 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-# 内容：国外媒体列表
-# 更新：2023-12-14 21:59:10
-# 数量：369条
-# ABC
-# AbemaTV
-# All4
-# Amazon
-# AppleNews
-# AppleTV
-# BBCiPlayer
-# Bahamut
-# DAZN
-# Deezer
-# DiscoveryPlus
-# DisneyPlus
-# EncoreTVB
-# FoxNow
-# HBO
-# HBO_GO_HKG
-# HWTV
-# Hulu
-# HuluJapan
-# ITV
-# JOOX
-# Japonx
-# KKBOX
-# KKTV
-# LiTV
-# LineTV
-# My5
-# MyTVSuper
-# Netflix
-# Niconico
-# NivodTV
-# Olevod
-# OpenAi
-# PBS
-# Pandora
-# Pornhub
-# Qobuz
-# SoundCloud
-# Spotify
-# TIDAL
-# TaiWanGood 台湾好
-# TikTok
-# Twitch
-# ViuTV
-# YouTube
-# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
@@ -2404,7 +4278,6 @@ rules:
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -2429,14 +4302,10 @@ rules:
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
-#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#   - USER-AGENT,AppleNews*,🌍 国外媒体
-#   - USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -2451,13 +4320,11 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -2469,14 +4336,11 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,Disney*,🌍 国外媒体
-#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2497,24 +4361,19 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
@@ -2535,7 +4394,6 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -2551,12 +4409,9 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#   - USER-AGENT,JOOX*,🌍 国外媒体
-#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2572,32 +4427,25 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#   - USER-AGENT,KKTV*,🌍 国外媒体
-#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
-#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -2638,7 +4486,6 @@ rules:
   - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
@@ -2677,20 +4524,16 @@ rules:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
   - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
-#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#   - USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -2699,14 +4542,11 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#   - USER-AGENT,TikTok*,🌍 国外媒体
   - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
@@ -2724,7 +4564,6 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -2740,9 +4579,6 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#   - USER-AGENT,*youtube*,🌍 国外媒体
-#   - USER-AGENT,YouTube*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -2757,49 +4593,11 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
-# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
   - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
   - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
-# 代理列表
-# MyList && Other
-# 国外域名
-# 国外域名关键字
-# GFW list
-# Amazon
-# BBC
-# Developer 开发者常用国外网站、镜像和论坛
-# Discord
-# Facebook
-# Github
-# Google
-# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
-# Instagram
-# Kakao Talk
-# Line
-# Oracle Cloud
-# OneDrive
-#DOMAIN-SUFFIX,aria.microsoft.com
-# Porn
-# Pixiv
-# Spark
-# Steam
-# TapTap
-# Twitch
-# Twitter
-# Telegram
-# TeraBox
-# Whatsapp
-# Wikipedia 维基相关域名
-#飞流直播
-#华文电视
-# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -9046,10 +10844,6 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-# 内容：中国IP地址段ipv4
-# 来源：https://github.com/17mon/china_ip_list/
-# 更新：2023-12-14 21:59:16
-# 数量：6791条
   - IP-CIDR,1.0.1.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,1.0.2.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,1.0.8.0/21,🎯 全球直连,no-resolve
@@ -15841,53 +17635,6 @@ rules:
   - IP-CIDR,223.255.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,223.255.236.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,223.255.252.0/23,🎯 全球直连,no-resolve
-# 直连列表
-# MyList
-# CN域名直连(中国|公司|网络)
-# 中国国内常见域名关键词直连
-# 360
-# 4399
-# 58
-# Alibaba
-# Baidu
-# Bilibili
-# ByteDance
-# CCTV
-# ChinaNet
-# DiDi
-# Douyu 斗鱼
-# Epic
-# HuaWei
-# Heytap
-# Iflytek 科大讯飞
-# Iqiyi
-# JD
-# Kingsoft
-# Kuaishou 快手
-# Meitu
-# LeTV 乐视
-# MGTV 芒果TV
-# MI
-# NetEase
-# PPTV、PPLive
-# PDD 拼多多
-# Sina
-# Sohu Sogo
-# Sony
-# SteamCN
-# Tencent
-# Vip 唯品会
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷
-# YYeTs 人人影视
-# TeamViewer
-# Public Direct CDN 公共直连
-#DOMAIN-SUFFIX,ajax.aspnetcdn.com
-#DOMAIN-SUFFIX,ajax.cloudflare.com
-#DOMAIN-SUFFIX,cdnjs.cloudflare.com
-#DOMAIN-SUFFIX,code.jquery.com
-# China DNS
-# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -16494,13 +18241,6 @@ rules:
   - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-# 中国云服务商ip端
-# 阿里
-# 腾讯 qq
-# 百度 Baidu
-# 华为 huwei
-# 网易 NetEase
-# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
@@ -16724,3 +18464,5 @@ rules:
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+proxy-providers: {}
+rule-providers: {}
