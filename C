@@ -1,758 +1,84 @@
 {
   "log": {
-    "disabled": false,
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   },
   "dns": {
     "servers": [
       {
-        "tag": "proxy_dns",
-        "address": "tls://8.8.8.8/dns-query",
-        "detour": "select"
+        "tag": "remote",
+        "address": "8.8.8.8",
+        "strategy": "prefer_ipv4",
+        "detour": "proxy"
       },
       {
-        "tag": "local_dns",
-        "address": "h3://223.5.5.5/dns-query",
+        "tag": "local",
+        "address": "223.5.5.5",
+        "strategy": "prefer_ipv4",
         "detour": "direct"
       },
       {
-        "tag": "reject",
-        "address": "rcode://refused"
+        "tag": "block",
+        "address": "rcode://success"
       },
       {
-        "tag": "fake_ip",
-        "address": "fakeip"
+        "tag": "local_local",
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "outbound": "any",
-        "server": "local_dns",
-        "disable_cache": true
+        "server": "local_local",
+        "domain": [
+          "api.tg8lnk.tech"
+        ]
       },
       {
-        "clash_mode": "Global",
-        "server": "proxy_dns"
+        "server": "remote",
+        "clash_mode": "Global"
       },
       {
-        "clash_mode": "Direct",
-        "server": "local_dns"
+        "server": "local_local",
+        "clash_mode": "Direct"
       },
       {
-        "rule_set": "geosite-cn",
-        "server": "local_dns"
+        "server": "local",
+        "rule_set": [
+          "geosite-cn"
+        ]
       },
       {
-        "rule_set": "geosite-geolocation-!cn",
-        "server": "proxy_dns"
-      },
-      {
-        "rule_set": "geosite-geolocation-!cn",
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fake_ip"
+        "server": "block",
+        "rule_set": [
+          "geosite-category-ads-all"
+        ]
       }
     ],
-    "final": "proxy_dns",
-    "independent_cache": true,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    }
-  },
-  "ntp": {
-    "detour": "direct",
-    "enabled": true,
-    "server": "time.apple.com",
-    "server_port": 123,
-    "interval": "30m"
+    "final": "remote"
   },
   "inbounds": [
     {
+      "type": "mixed",
+      "tag": "socks",
+      "listen": "127.0.0.1",
+      "listen_port": 10808,
       "sniff": true,
-      "sniff_override_destination": true,
-      "domain_strategy": "prefer_ipv4",
-      "type": "tun",
-      "inet4_address": "172.16.0.1/30",
-      "inet6_address": "2001:0470:f9da:fdfa::1/64",
-      "mtu": 9000,
-      "auto_route": true,
-      "strict_route": true,
-      "endpoint_independent_nat": true
+      "sniff_override_destination": true
     }
   ],
   "outbounds": [
     {
-      "type": "selector",
-      "tag": "select",
-      "outbounds": [
-        "url-test",
-        "2024年12月25日_1",
-        "2024年12月25日_2",
-        "2024年12月25日_3",
-        "2024年12月25日_4",
-        "2024年12月25日_5",
-        "2024年12月25日_6",
-        "2024年12月25日_7",
-        "2024年12月25日_8",
-        "2024年12月25日_9",
-        "2024年12月25日_10",
-        "2024年12月25日_11",
-        "2024年12月25日_12",
-        "2024年12月25日_13",
-        "2024年12月25日_14",
-        "2024年12月25日_15",
-        "2024年12月25日_16",
-        "2024年12月25日_17",
-        "2024年12月25日_18",
-        "2024年12月25日_19",
-        "2024年12月25日_20",
-        "2024年12月25日_21",
-        "2024年12月25日_22",
-        "2024年12月25日_23",
-        "2024年12月25日_24",
-        "2024年12月25日_25",
-        "2024年12月25日_26",
-        "2024年12月25日_27",
-        "2024年12月25日_28",
-        "2024年12月25日_29",
-        "2024年12月25日_30",
-        "2024年12月25日_31",
-        "2024年12月25日_32",
-        "2024年12月25日_33",
-        "2024年12月25日_34",
-        "2024年12月25日_35",
-        "2024年12月25日_36",
-        "2024年12月25日_37",
-        "2024年12月25日_38",
-        "2024年12月25日_39",
-        "2024年12月25日_40",
-        "2024年12月25日_41",
-        "2024年12月25日_42",
-        "2024年12月25日_43",
-        "2024年12月25日_44",
-        "2024年12月25日_45",
-        "2024年12月25日_46",
-        "2024年12月25日_47",
-        "2024年12月25日_48"
-      ],
-      "default": "url-test"
-    },
-    {
-      "type": "urltest",
-      "tag": "url-test",
-      "outbounds": [
-        "2024年12月25日_1",
-        "2024年12月25日_2",
-        "2024年12月25日_3",
-        "2024年12月25日_4",
-        "2024年12月25日_5",
-        "2024年12月25日_6",
-        "2024年12月25日_7",
-        "2024年12月25日_8",
-        "2024年12月25日_9",
-        "2024年12月25日_10",
-        "2024年12月25日_11",
-        "2024年12月25日_12",
-        "2024年12月25日_13",
-        "2024年12月25日_14",
-        "2024年12月25日_15",
-        "2024年12月25日_16",
-        "2024年12月25日_17",
-        "2024年12月25日_18",
-        "2024年12月25日_19",
-        "2024年12月25日_20",
-        "2024年12月25日_21",
-        "2024年12月25日_22",
-        "2024年12月25日_23",
-        "2024年12月25日_24",
-        "2024年12月25日_25",
-        "2024年12月25日_26",
-        "2024年12月25日_27",
-        "2024年12月25日_28",
-        "2024年12月25日_29",
-        "2024年12月25日_30",
-        "2024年12月25日_31",
-        "2024年12月25日_32",
-        "2024年12月25日_33",
-        "2024年12月25日_34",
-        "2024年12月25日_35",
-        "2024年12月25日_36",
-        "2024年12月25日_37",
-        "2024年12月25日_38",
-        "2024年12月25日_39",
-        "2024年12月25日_40",
-        "2024年12月25日_41",
-        "2024年12月25日_42",
-        "2024年12月25日_43",
-        "2024年12月25日_44",
-        "2024年12月25日_45",
-        "2024年12月25日_46",
-        "2024年12月25日_47",
-        "2024年12月25日_48"
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50
-    },
-    {
-      "type": "vmess",
-      "tag": "2024年12月25日_1",
-      "server": "172.67.164.232",
-      "server_port": 443,
-      "uuid": "33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/rongseven?ed=2048",
-        "headers": {
-          "host": "33.bycf.us.kg"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "2024年12月25日_2",
-      "server": "162.159.25.11",
-      "server_port": 443,
-      "uuid": "a6292090-afe1-4640-97a7-4f1d1d877cf1",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Av8czorIlYicU6D349brWUw6a",
-        "headers": {
-          "host": "hdfy8c1.cpionline.co"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "2024年12月25日_3",
-      "server": "www.aetv.com",
-      "server_port": 80,
-      "uuid": "beb7d098-48ba-4be8-a47a-758bf3c470b8",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "host": "amd.al"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "2024年12月25日_4",
-      "server": "primer.ibilibi.li",
-      "server_port": 443,
-      "uuid": "e5852393-ca52-4c90-a237-d63cbbb57f21",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/farcry?ed=2560",
-        "headers": {
-          "host": "loki.oracle"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_5",
-      "server": "212.102.53.193",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_6",
-      "server": "zx3.node1s.us.kg",
-      "server_port": 18779,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_7",
-      "server": "zx1.node1s.us.kg",
-      "server_port": 18779,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_8",
-      "server": "zx2.node1s.us.kg",
-      "server_port": 18789,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_9",
-      "server": "zx3.node1s.us.kg",
-      "server_port": 18799,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_10",
-      "server": "zx2.node1s.us.kg",
-      "server_port": 19254,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_11",
-      "server": "zx3.node1s.us.kg",
-      "server_port": 19254,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_12",
-      "server": "zx1.node1s.us.kg",
-      "server_port": 18739,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_13",
-      "server": "zx3.node1s.us.kg",
-      "server_port": 18789,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_14",
-      "server": "zx2.node1s.us.kg",
-      "server_port": 25971,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_15",
-      "server": "zx2.node1s.us.kg",
-      "server_port": 18739,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_16",
-      "server": "zx3.node1s.us.kg",
-      "server_port": 25971,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5803c45f-044f-4652-b6ac-bce1911d434d",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "2024年12月25日_17",
-      "server": "tw.ssrxray.click",
-      "server_port": 36918,
-      "method": "aes-256-gcm",
-      "password": "uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ",
-      "multiplex": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "2024年12月25日_18",
-      "server": "us-w-s3.riot-cdn.com",
-      "server_port": 443,
-      "uuid": "61eb66a8-bc41-491e-a8dc-270874140f41",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "2024年12月25日_19",
-      "server": "scp-fasttttly.tencent.su",
-      "server_port": 80,
-      "uuid": "4ea312d7-3844-4ff8-8062-ed2e03ddc2a1",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "host": "scp-only.ws.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_20",
-      "server": "36.151.192.242",
-      "server_port": 18682,
-      "password": "QwwHvrnN",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_21",
-      "server": "36.151.192.242",
-      "server_port": 18682,
-      "password": "QwwHvrnN",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_22",
-      "server": "jobsfortheworldtoday.com",
-      "server_port": 443,
-      "password": "71409d3e488548e8bb076d229778f008",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_23",
-      "server": "120.232.217.96",
-      "server_port": 21056,
-      "password": "ffa68efa-e282-4fae-a4c4-5f1fdaa76d81",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_24",
-      "server": "223.113.54.145",
-      "server_port": 36442,
-      "password": "QwwHvrnN",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_25",
-      "server": "36.151.192.201",
-      "server_port": 34185,
-      "password": "QwwHvrnN",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_26",
-      "server": "36.151.192.239",
-      "server_port": 42395,
-      "password": "QwwHvrnN",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_27",
-      "server": "jobsfortheworldtoday.com",
-      "server_port": 443,
-      "password": "71409d3e488548e8bb076d229778f008",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_28",
-      "server": "38.99.82.225",
-      "server_port": 443,
-      "password": "71409d3e488548e8bb076d229778f008",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_29",
-      "server": "sj.5216818.xyz",
-      "server_port": 443,
-      "password": "15c33952",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_30",
-      "server": "std1.loadingip.com",
-      "server_port": 443,
-      "password": "94d219c9-1afc-4d42-b090-8b3794764380",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "2024年12月25日_31",
-      "server": "160.30.21.105",
-      "server_port": 443,
-      "password": "94d219c9-1afc-4d42-b090-8b3794764380",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "2024年12月25日_32",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_33",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_34",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_35",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_36",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_37",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_38",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_39",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_40",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_41",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_42",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_43",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_44",
-      "server": "45.76.0.86",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "4b817757"
-      },
-      "password": "1f17cdf0578a2860"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_45",
-      "server": "46.17.41.189",
-      "server_port": 50717,
-      "password": "dongtaiwang.com"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_46",
-      "server": "95.182.100.183",
-      "server_port": 8443,
-      "password": "sysadmin.sysadmin"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_47",
-      "server": "66.135.11.68",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "13f7ba5f"
-      },
-      "password": "4e9ee29b39a28277"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "2024年12月25日_48",
+      "tag": "proxy",
       "server": "api.tg8lnk.tech",
       "server_port": 443,
-      "password": "ThisIsNotForSale-Free%24ervice"
+      "password": "ThisIsNotForSale-Free$ervice",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true
+      }
     },
     {
       "type": "direct",
@@ -760,7 +86,7 @@
     },
     {
       "type": "block",
-      "tag": "reject"
+      "tag": "block"
     },
     {
       "type": "dns",
@@ -770,82 +96,105 @@
   "route": {
     "rules": [
       {
-        "clash_mode": "Global",
-        "outbound": "select"
+        "outbound": "proxy",
+        "clash_mode": "Global"
       },
       {
-        "clash_mode": "Direct",
-        "outbound": "direct"
+        "outbound": "direct",
+        "clash_mode": "Direct"
       },
       {
-        "protocol": "dns",
-        "outbound": "dns_out"
+        "outbound": "dns_out",
+        "protocol": [
+          "dns"
+        ]
       },
       {
-        "rule_set": "geosite-category-ads-all",
-        "outbound": "reject"
+        "outbound": "direct",
+        "domain": [
+          "example-example.com",
+          "example-example2.com"
+        ],
+        "domain_suffix": [
+          ".example-example.com",
+          ".example-example2.com"
+        ]
       },
       {
-        "rule_set": "geoip-cn",
-        "outbound": "direct"
+        "outbound": "block",
+        "network": [
+          "udp"
+        ],
+        "port": [
+          443
+        ]
       },
       {
-        "rule_set": "geosite-cn",
-        "outbound": "direct"
+        "outbound": "block",
+        "rule_set": [
+          "geosite-category-ads-all"
+        ]
       },
       {
+        "outbound": "direct",
+        "rule_set": [
+          "geosite-cn",
+          "geosite-geolocation-cn"
+        ]
+      },
+      {
+        "outbound": "direct",
         "ip_is_private": true,
-        "outbound": "direct"
+        "ip_cidr": [
+          "223.5.5.5/32",
+          "119.29.29.29/32",
+          "180.76.76.76/32",
+          "114.114.114.114/32"
+        ],
+        "rule_set": [
+          "geoip-cn"
+        ]
       },
       {
-        "rule_set": "geosite-geolocation-!cn",
-        "outbound": "select"
+        "outbound": "proxy",
+        "port_range": [
+          "0:65535"
+        ]
       }
     ],
     "rule_set": [
       {
-        "type": "remote",
-        "tag": "geoip-cn",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
-        "download_detour": "select",
-        "update_interval": "1d"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-cn",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
-        "download_detour": "select",
-        "update_interval": "1d"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-geolocation-!cn",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "select",
-        "update_interval": "1d"
-      },
-      {
-        "type": "remote",
         "tag": "geosite-category-ads-all",
+        "type": "local",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
-        "download_detour": "select",
-        "update_interval": "1d"
+        "path": "E:\\Software\\v2rayN-windows-64-With-Core\\bin\\srss\\geosite-category-ads-all.srs"
+      },
+      {
+        "tag": "geosite-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "E:\\Software\\v2rayN-windows-64-With-Core\\bin\\srss\\geosite-cn.srs"
+      },
+      {
+        "tag": "geosite-geolocation-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "E:\\Software\\v2rayN-windows-64-With-Core\\bin\\srss\\geosite-geolocation-cn.srs"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "E:\\Software\\v2rayN-windows-64-With-Core\\bin\\srss\\geoip-cn.srs"
       }
-    ],
-    "final": "select",
-    "auto_detect_interface": true
+    ]
   },
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "path": "cache.db"
+      "enabled": true
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:9090"
+      "external_controller": "127.0.0.1:2154"
     }
   }
 }
